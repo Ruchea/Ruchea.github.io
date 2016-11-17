@@ -14,6 +14,9 @@
       margin: 0 0 20px 0;
       font-size: 70px;
    }
+   h2 {
+      font-size: 26px;
+   }
    ul {
       padding: 10px;
       background: black;
@@ -30,7 +33,6 @@
       color: #b3ffe6;
    }
    body {
-      text-align: center;
       background: url("DarkBG.jpg")
                   no-repeat center center fixed;
       background-size: cover;
@@ -38,20 +40,66 @@
       color: white;
       font-family: Trebuchet MS;
    }
-
+   header {
+      text-align: center;
+      position: relative;;
+   }
+   div {
+      background-size: cover;
+      margin: 40px auto;
+      border-radius: 12px;
+      max-width: 650px;
+      height: 225px;
+      position: relative;
+   }
+   .Ascended {
+      background-image: url("Assets/ACND.jpg");
+   }
+   .Vetalus {
+      background-image: url("Assets/VTLS.jpg");
+   }
+   .DemonHunters {
+      background-image: url("Assets/DMNHTRS.jpg");
+   }
+   p {
+      color: rgba(255, 255, 255, 1);
+      background-color: rgba(0, 0, 0, 1);
+      padding: 10px;
+      text-align: justify;
+      line-height: 28px;
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+   }
    </style>
 </head>
 
 <body>
    <header>
       <h1>Vis Vetalus</h1>
-      <p>Online Database for the fictional works of Ruchea V.</p>
+      <h2>Online Database for the fictional works of Ruchea V.</h2>
       <ul>
          <li><a href="#">Home</a></li>
-         <li><a href="#">Affilations</a></li>
-         <li><a href="#">SomeOtherLink</a></li>
+         <li><a href="#">Teams</a></li>
+         <li><a href="#">World Setting</a></li>
       </ul>
   </header>
+
+  <div class="Ascended">
+     <p>Ascended<br />
+        <small>Elite status and kitchen sink. Overseers of the Queen's worlds,
+        "anchor" players and last line of defense.</small></p>
+   </div>
+   <div class="Vetalus">
+      <p>Vetalus<br />
+         Adventurers, mercenaries, explorers, quest-completers.
+         Lead by matron summoner Lady Vetalus.</small></p>
+    </div>
+    <div class="DemonHunters">
+       <p>Demon Hunters<br />
+          Specializes in ghost busting and demon hunting.
+          Hellspawns and eldritch abominations beware.</small></p>
+     </div>
 
 </body>
 </html>
